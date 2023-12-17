@@ -151,7 +151,7 @@
           );
           return new Promise((resolve, reject) => {
             if ("geolocation" in navigator) {
-              navigator.geolocation.getCurrentPosition(
+              navigator.geolocation.watchPosition(
                 (position) => {
                   resolve([
                     position.coords.longitude,
