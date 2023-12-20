@@ -162,8 +162,8 @@
                   reject(error);
                 },
                 {
-                  enableHighAccuracy: false,
-                  timeout: 5000,
+                  enableHighAccuracy: true,
+                  timeout: 10000,
                   maximumAge: Infinity,
                 }
               );
@@ -246,7 +246,7 @@
           }
 
           // Repeat every 5 seconds
-          setTimeout(updateRoute, 5000);
+          setTimeout(updateRoute, 10000);
         }
 
         // Function to calculate distance between two coordinates using Haversine formula
